@@ -11,8 +11,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
 # Inherit some common TWRP stuff.
 $(call inherit-product, vendor/twrp/config/common.mk)
 
-# Inherit from CPH1909 device
-$(call inherit-product, device/oppo/CPH1909/device.mk)
+PRODUCT_COPY_FILES += \
+  $(OUT_DIR)/target/device/oppo/CPH1909/recovery.fstab:$(TARGET_COPY_OUT_RECOVERY)recovery/root/etc/recovery.fstab
+
 
 PRODUCT_DEVICE := CPH1909
 PRODUCT_NAME := omni_CPH1909
