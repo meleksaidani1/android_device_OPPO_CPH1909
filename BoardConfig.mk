@@ -95,8 +95,8 @@ PB_TORCH_MAX_BRIGHTNESS := 1
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
 
 # SHRP 
-SHRP_DEVICE_CODE := BA2
-SHRP_PATH := device/Tecno/BA2
+SHRP_DEVICE_CODE := CPH1909
+SHRP_PATH := device/OPPO/CPH1909
 SHRP_DEVICE_TYPE := A
 SHRP_REC := /dev/block/platform/bootdevice/by-name/recovery
 SHRP_FLASH := 0
